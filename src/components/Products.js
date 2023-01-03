@@ -1,7 +1,9 @@
 import Product from "./Product";
-import {useState,useEffect} from 'react';
+import {useState,useEffect,useContext} from 'react';
+import { CartContext } from "../CartContext";
 
 const Products = () => {
+  // const {name}=useContext(CartContext);
 const [products, setProducts]= useState([]);
 useEffect(()=>{
    fetch('https://star-spark-pasta.glitch.me/api/products')
