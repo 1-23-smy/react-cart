@@ -12,7 +12,7 @@ function App() {
     //fetch from local storage because after refresh the data will remain in our storage.
     useEffect(() => {
       const cart = window.localStorage.getItem('cart');
-        console.log(JSON.parse(cart));
+        // console.log(JSON.parse(cart));
     }, [])
     
 useEffect(() => {
